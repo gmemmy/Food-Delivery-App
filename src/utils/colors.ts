@@ -4,4 +4,4 @@ const colors = {
   red: '#FFB567'
 }
 
-export default colors;
+export default colors

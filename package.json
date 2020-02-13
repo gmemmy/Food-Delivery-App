@@ -5,7 +5,18 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "prettier": "prettier './src/**/*.{ts,tsx}' --single-quote --no-semi --write"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json}": [
+      "npm run prettier",
+      "git add"
+    ],
+    "src/**/*.{ts,tsx}": [
+      "npm run prettier",
+      "git add"
+    ]
   },
   "dependencies": {
     "expo": "~36.0.0",
@@ -21,6 +32,8 @@
     "@types/react": "~16.9.0",
     "@types/react-native": "~0.60.23",
     "babel-preset-expo": "~8.0.0",
+    "husky": "^4.2.3",
+    "prettier": "^1.19.1",
     "typescript": "~3.6.3"
   },
   "private": true
