@@ -31,6 +31,33 @@ const styles = StyleSheet.create({
     marginLeft: getWidth(15),
     fontWeight: 'bold',
     fontSize: getHeight(30)
+  },
+  searchView: {
+    flexDirection: 'row',
+    marginTop: getHeight(30),
+    marginLeft: getWidth(15)
+  },
+  input: {
+    height: getHeight(50),
+    width: getWidth(250),
+    backgroundColor: colors.grey,
+    borderRadius: getWidth(12),
+    paddingHorizontal: getWidth(20),
+    color: colors.black
+  },
+  searchIcon: {
+    backgroundColor: colors.grey,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginLeft: getWidth(25),
+    height: getHeight(50),
+    width: getWidth(50),
+    borderRadius: getWidth(12)
+  },
+  burger: {
+    height: getHeight(35),
+    width: getWidth(50),
+    resizeMode: 'contain'
   }
 })
 

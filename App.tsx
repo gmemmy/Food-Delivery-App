@@ -8,7 +8,7 @@ export default function App() {
  
   useEffect(() => {
     Font.loadAsync({
-      'MaisonNeueBold': require('./assets/Raleway-Bold.ttf'),
+      'MaisonNeueBold': require('./assets/Raleway-Regular.ttf'),
     }).then(() => setFontLoaded(true))
     return () => {
       setFontLoaded(false)

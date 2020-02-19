@@ -1,10 +1,17 @@
 import React from 'react'
-import { View, TouchableOpacity, Text, Image } from 'react-native'
+import {
+  View,
+  TouchableOpacity,
+  Text,
+  Image,
+  TextInput,
+  TouchableHighlight
+} from 'react-native'
 import styles from './styles'
 import colors from '../../utils/colors'
 
 //Icons
-import { SimpleLineIcons, AntDesign } from '@expo/vector-icons'
+import { SimpleLineIcons, AntDesign, EvilIcons } from '@expo/vector-icons'
 
 const burgerImage = require('../../../assets/burger.png')
 
@@ -16,11 +23,23 @@ const Home = () => {
           <AntDesign name="menuunfold" size={20} color={colors.black} />
         </TouchableOpacity>
         <TouchableOpacity style={styles.bagIcon}>
-          <SimpleLineIcons name="handbag" size={20} color={colors.red} />
+          <SimpleLineIcons name="handbag" size={20} color={colors.orange} />
         </TouchableOpacity>
       </View>
-      <View>
-        <Text style={styles.headerText}>Houz Cheese{'\n'}Burger</Text>
+      <Text style={styles.headerText}>Houz Cheese</Text>
+      <View style={{ flexDirection: 'row' }}>
+        <Text style={styles.headerText}>Burger</Text>
+        <Image source={burgerImage} style={styles.burger} />
+      </View>
+      <View style={styles.searchView}>
+        <TextInput
+          style={styles.input}
+          placeholder="Search here"
+          placeholderTextColor={colors.black}
+        />
+        <TouchableOpacity style={styles.searchIcon}>
+          <EvilIcons name="search" size={30} />
+        </TouchableOpacity>
       </View>
     </View>
   )
