@@ -58,6 +58,27 @@ const styles = StyleSheet.create({
     height: getHeight(35),
     width: getWidth(50),
     resizeMode: 'contain'
+  },
+  foodListContainer: {
+    flex: 0.1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: getHeight(10)
+  },
+  food: {
+    fontWeight: 'bold',
+    fontSize: getWidth(18),
+    paddingHorizontal: getWidth(20)
+  },
+  foodHighLight: {
+    backgroundColor: colors.lightOrange,
+    flex: 0.6,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: getWidth(10),
+    borderBottomColor: colors.orange,
+    borderBottomWidth: getWidth(5)
   }
 })
 
