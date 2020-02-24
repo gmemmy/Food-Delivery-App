@@ -1,20 +1,20 @@
-const foodList = [
+export const foodList = [
   {
-    id: '0',
+    id: '1',
     name: 'Burger'
   },
   {
-    id: '1',
+    id: '2',
     name: 'Pizza'
   },
   {
-    id: '2',
+    id: '3',
     name: 'Pasta'
   },
   {
-    id: '3',
+    id: '4',
     name: 'Salad'
   }
 ]
 
-export default foodList
+export const foodAdverts = [{}]

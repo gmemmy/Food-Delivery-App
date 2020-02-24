@@ -7,78 +7,24 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: colors.white
   },
-  header: {
-    flex: 0.05,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    marginTop: getHeight(50)
-  },
-  menuIcon: {
-    marginLeft: getWidth(15),
-    color: colors.black
-  },
-  bagIcon: {
-    marginRight: getWidth(15)
-  },
   burgerImage: {
     resizeMode: 'contain',
-    height: getHeight(50),
-    width: getWidth(50),
-    borderRadius: getWidth(50) / 2,
-    overflow: 'hidden'
+    height: getHeight(200),
+    width: getWidth(200)
   },
   headerText: {
     marginLeft: getWidth(15),
     fontWeight: 'bold',
     fontSize: getHeight(30)
   },
-  searchView: {
-    flexDirection: 'row',
-    marginTop: getHeight(30),
-    marginLeft: getWidth(15)
-  },
-  input: {
-    height: getHeight(50),
-    width: getWidth(250),
-    backgroundColor: colors.grey,
-    borderRadius: getWidth(12),
-    paddingHorizontal: getWidth(20),
-    color: colors.black
-  },
-  searchIcon: {
-    backgroundColor: colors.grey,
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginLeft: getWidth(25),
-    height: getHeight(50),
-    width: getWidth(50),
-    borderRadius: getWidth(12)
-  },
   burger: {
     height: getHeight(35),
     width: getWidth(50),
     resizeMode: 'contain'
   },
-  foodListContainer: {
-    flex: 0.1,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginTop: getHeight(10)
-  },
-  food: {
-    fontWeight: 'bold',
-    fontSize: getWidth(18),
-    paddingHorizontal: getWidth(20)
-  },
-  foodHighLight: {
-    backgroundColor: colors.lightOrange,
-    flex: 0.6,
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderRadius: getWidth(10),
-    borderBottomColor: colors.orange,
-    borderBottomWidth: getWidth(5)
+  feed: {
+    backgroundColor: colors.orange,
+    marginTop: getHeight(200)
   }
 })
 
